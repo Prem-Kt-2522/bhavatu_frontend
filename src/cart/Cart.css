@@ -1,0 +1,146 @@
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px; /* Fixed width for the cart panel */
+  height: 100%; /* Full height */
+  z-index: 100; /* Ensures it appears above other content */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  overflow: hidden; /* Hide overflow content */
+  background-color: rgba(255, 255, 255, 0.95); /* Light background with slight transparency */
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.cart-content {
+  width: 400px; /* Fixed width for the content */
+  height: 100%; /* Full height */
+  background-color: #f4f6f9; /* Light background color */
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  animation: slideCartWindow 0.4s ease forwards; /* Slide-in animation */
+  z-index: 1; /* Ensure it sits above the panel */
+}
+
+@keyframes slideCartWindow {
+  0% {
+    transform: translateX(100%); /* Start off-screen */
+  }
+  100% {
+    transform: translateX(0); /* Slide in */
+  }
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between; /* Space out header items */
+  padding: 20px; /* Padding for header */
+  background-color: #8e2de2; /* Header background color */
+  color: white; /* Header text color */
+  font-weight: bold; /* Bold text */
+  font-size: 20px; /* Header font size */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+.close-button {
+  font-size: 20px; /* Close button size */
+  cursor: pointer; /* Pointer on hover */
+  color: white; /* Close button color */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.close-button:hover {
+  opacity: 0.7; /* Slightly transparent on hover */
+}
+
+.cart-body {
+  padding: 20px; /* Padding for body */
+  flex-grow: 1; /* Allow body to grow and fill space */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.cart-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light border at the top */
+  padding: 20px 15px; /* Padding for footer */
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.subtotal {
+  display: flex; /* Flex layout for subtotal */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+.subtotal .text {
+  font-size: 20px; /* Subtotal text size */
+  font-weight: 800; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  color: #333; /* Dark color for contrast */
+}
+
+.subtotal .text-total {
+  font-size: 20px; /* Total text size */
+  font-weight: 400; /* Regular weight */
+  color: #8e2de2; /* Accent color for total */
+}
+
+.button {
+  display: flex;
+  justify-content: center; /* Center the button */
+  margin-top: 20px; /* Space above the button */
+}
+
+.checkout-cta {
+  background-color: #8e2de2; /* Button background color */
+  color: white; /* Button text color */
+  padding: 15px 30px; /* Standard button padding */
+  font-size: 20px; /* Button text size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  border: none; /* Remove border */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.checkout-cta:hover {
+  background-color: #6516aa; /* Darker shade on hover */
+}
+
+.opac-layer {
+  display: none; /* Layer visibility */
+}
+
+.emptycart {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: calc(100vh - 150px); /* Full viewport height minus header/footer */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for spacing */
+  background-color: #f4f6f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.emptycart span {
+  font-size: 20px; /* Adjusted font size for the message */
+  color: #333; /* Dark color for text */
+  margin: 15px 0; /* Space above and below the message */
+}
+
+.emptycart .return-cta {
+  background-color: #8e2de2; /* Main color for the button */
+  color: white; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 18px; /* Button font size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.emptycart .return-cta:hover {
+  background-color: #6516aa; /* Darker shade on hover */
+}

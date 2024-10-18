@@ -1,0 +1,174 @@
+
+
+.promo-section {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-image: url('your-background-image.jpg'); /* Replace with the actual background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust for darker overlay */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #ff4d4d; /* Highlight color */
+}
+
+.para {
+  margin: 20px 0;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn, .play-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #333;
+}
+
+.play-btn {
+  width: 13px;
+  height: 16px;
+  border-radius: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-icon {
+  font-size: 1.5rem;
+}
+.wrapper {
+  width: 100%;
+  padding: 0 20px; /* Padding to ensure some space on the sides */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four cards in a row */
+  gap: 20px; /* Space between cards */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.card-container {
+  width: 100%;
+  display: flex; /* Flexbox to center content inside the card */
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient-wrapper {
+  position: relative;
+  width: 100%; /* Full width of card container */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border for classiness */
+  background: rgba(0, 0, 0, 0.6); /* Transparent background */
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  height: 300px; /* Fixed height for consistent card size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Smooth transitions */
+}
+
+.gradient-wrapper:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+.gradient-wrapper img {
+  width: 100%; /* Full width of card */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: transform 0.3s; /* Smooth image zoom effect */
+}
+
+.gradient-wrapper:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.green-gradient::after {
+  background: linear-gradient(71deg, #0d1212, #1a2a3a, #0d1212); /* Night sky tones */
+}
+
+.white-gradient::after {
+  background: linear-gradient(71deg, #121013, #2d2d2d, #121013); /* Dark gray for night effect */
+}
+
+.yellow-gradient::after {
+  background: linear-gradient(71deg, #110e0e, #2a2a2a, #110e0e); /* Darker yellow for night effect */
+}
+
+.blue-gradient::after {
+  background: linear-gradient(71deg, #0c0a0e, #1e2a3a, #0c0a0e); /* Blue night sky effect */
+}
+
+.text-title {
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-size: 24px; /* Adjusted for better visibility */
+  padding-bottom: 8px;
+  margin: 0; /* Remove default margin */
+}
+
+.text-description {
+  font-weight: 400;
+  line-height: 24px;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 14px;
+  max-width: 100%;
+  margin: 0; /* Remove default margin */
+}

@@ -1,0 +1,24 @@
+.vastu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f9f9f9; /* Light grey background for the container */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.vastu-container h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem; /* Larger font size for the heading */
+  color: #333; /* Dark grey color for the heading */
+}
+
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  background: white;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 5px 5px 24px 0px #0000001F;
+}

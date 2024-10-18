@@ -1,0 +1,117 @@
+/* Products container styling */
+.products-container {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .products-container {
+        margin: 75px 0;
+    }
+}
+
+/* Product grid layout */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+    gap: 20px; /* Space between grid items */
+    justify-items: center;
+}
+
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr; /* 1 column for mobile screens */
+        gap: 10px; /* Reduce gap on mobile */
+    }
+}
+
+/* Product card styling */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.563);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 250px; /* Keep the existing max-width */
+    max-height: 350px; /* Set a maximum height */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Product card hover effect */
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Product image styling */
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Product details styling */
+.prod-details {
+    padding: 15px;
+    flex-grow: 1; /* Allow details to take up remaining space */
+    display: flex;
+    flex-direction: column; /* Stack name and price */
+}
+
+/* Adjust the name and price */
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.968);
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    margin-top: auto; /* Push price to the bottom */
+}
+
+/* Ensure that the heading color is high contrast */
+.sec-heading {
+    margin-bottom: 30px;
+    font-size: 32px; /* Increase font size */
+    color: #ffffff; /* Pure white color */
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 10px; /* Add some padding for better readability */
+    border-radius: 5px; /* Rounded corners for a clean look */
+}
+
+/* Section underline */
+.products-container:after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    width: 70px;
+    height: 4px;
+    background-color: #ff5722;
+    margin-left: auto;
+    margin-right: auto;
+}

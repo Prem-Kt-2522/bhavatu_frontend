@@ -1,0 +1,89 @@
+
+    
+
+
+.login-container {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url('https://r4.wallpaperflare.com/wallpaper/623/907/622/style-the-dark-background-food-spoon-wallpaper-50b9be932b01adda903097ce88942b3d.jpg');
+    background-size: cover;
+    background-position: center; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    height: 60vh; /* Adjusted height */
+    width: 400px; /* Adjusted width */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 24px; /* Increased font size */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Increased font size */
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.remember-forgot label {
+    font-size: 14px; /* Increased font size */
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Increased font size */
+}
+
+.ebutton {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px; /* Increased font size */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.login-box p {
+    margin-top: 30px; /* Increased margin */
+    font-size: 14px; /* Increased font size */
+}
+
+.login-box p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-box p a:hover {
+    text-decoration: underline;
+}

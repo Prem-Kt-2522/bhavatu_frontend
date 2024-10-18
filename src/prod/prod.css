@@ -1,0 +1,14 @@
+ h1{
+    color: aliceblue;
+}
+.main-content {
+    max-width: calc(100% - 20px); /* Correct calc usage */
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        max-width: 1200px;
+    }
+}
+

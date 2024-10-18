@@ -1,0 +1,117 @@
+.search-model {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: white; /* Change to a light shade for better contrast */
+  animation: slideSearchWindow 0.5s ease forwards;
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+input {
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px; /* Added padding for better touch targets */
+  transition: border-color 0.3s; /* Transition effect for border color */
+}
+
+input:focus {
+  border-color: #8e2de2; /* Change border color on focus for better visibility */
+}
+
+.close-btn {
+  margin-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #8e2de2; /* Retained original color */
+  transition: color 0.3s; /* Transition effect on hover */
+}
+
+.close-btn:hover {
+  color: #7b1fa2; /* Darker shade on hover for better UX */
+}
+
+.search-result-content {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.search-result-item:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Subtle hover effect for items */
+}
+
+.img-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-details {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #555; /* Change description color for better readability */
+}
+
+/* Animation for sliding in the search model */
+@keyframes slideSearchWindow {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0%);
+  }
+}

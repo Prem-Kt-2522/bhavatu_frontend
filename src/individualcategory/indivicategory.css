@@ -1,0 +1,82 @@
+/* Main category content container with glassmorphic background */
+.category-maincontent {
+    margin: 50px 0;
+    padding: 30px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-radius: 20px; /* Rounded corners to enhance glass effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for contrast */
+}
+
+/* Layout for the category page */
+.layout {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Category title styling */
+.category-title {
+    font-size: 48px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Products container margin */
+.products-container {
+    margin-top: 30px;
+}
+
+/* Improve the section heading style inside the products component */
+.sec-heading {
+    font-size: 36px;
+    color:white;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+/* Ensure individual product styling consistency */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 250px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .category-title {
+        font-size: 36px;
+    }
+
+    .layout {
+        padding: 0 10px;
+    }
+
+    .sec-heading {
+        font-size: 28px;
+    }
+
+    .product-card {
+        max-width: 200px;
+    }
+}

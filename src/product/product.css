@@ -1,0 +1,62 @@
+.products-container {
+    padding: 20px;
+    max-width: 1200px; /* Limit the width for better readability */
+    margin: auto;
+}
+
+.sec-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Make the heading larger */
+    color: white; /* Ensure the text is visible on dark background */
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between product cards */
+}
+
+.empty-state {
+    text-align: center;
+    color: white; /* Ensure the text is visible on dark background */
+    font-size: 1.5rem; /* Make it slightly larger */
+    margin-top: 20px; /* Add some margin above */
+}
+
+/* Example hover effect for product cards */
+.product {
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .prod-details {
+    margin-top: 10px;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 1rem;
+    color: #666;
+  }
+  

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/bhavatufinal.appspot.com/o/bg.jpg?alt=media&token=4007a116-414c-42fb-adc3-ec0d7efedc68);
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the background image cover the entire body */
+  background-position: center; /* Centers the background image */
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove background image for a specific tab/page */
+#no-bg-page {
+  background-image: none; /* Removes the background image */
+}

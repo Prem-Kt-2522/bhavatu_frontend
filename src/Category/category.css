@@ -1,0 +1,54 @@
+/* Main container for shop by category section */
+.shop-by-category {
+    display: flex;
+    margin: 25px 0;
+    gap: 20px; /* Space between categories */
+    justify-content: space-around; /* Align categories evenly */
+    padding: 20px; /* Optional padding */
+}
+
+/* Wrapper for categories */
+.categories {
+    display: flex;
+    flex-wrap: wrap; /* Wrap categories to next line if necessary */
+    gap: 20px; /* Space between categories */
+}
+
+/* Individual category styles */
+.category {
+    flex: 1;
+    background-color: black;
+    width: calc(50% - 20px); /* Adjust width for spacing */
+    cursor: pointer;
+    overflow: hidden; /* Prevent overflow of images */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effects for categories */
+.category:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
+}
+
+/* Image styles within categories */
+.category img {
+    width: 100%; /* Full width of the container */
+    display: block; /* Ensure no extra space below images */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Cover the entire area */
+    border-radius: 10px; /* Match border radius */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+/* Scale image up on category hover */
+.category:hover img {
+    transform: scale(1.1); /* Scale image on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category {
+        width: calc(100% - 20px); /* Full width for mobile screens */
+    }
+}
